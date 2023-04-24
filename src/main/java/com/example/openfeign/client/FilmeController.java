@@ -14,7 +14,7 @@ public class FilmeController {
         this.client = client;
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/search/{id}")
     public Filme search(@PathVariable String id) {
         return client.search(id);
     }
